@@ -18,3 +18,21 @@ button:hover{
   background:rgb(189, 94, 109);
   color:white;
 }
+
+.card-grid{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card{
+  position:relative;
+}
+
+.card img{
+  width:100%;
+  display:block;
+  border:2px solid white;
+  border-radius: 6px;
+}
