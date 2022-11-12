@@ -25,6 +25,8 @@ function App() {
         ...card,
         id: Math.random(),
       }));
+    setChoiceOne(null);
+    setChoiceTwo(null);
     setCards(shuffledCards);
     setTurns(0);
   };
@@ -60,6 +62,10 @@ function App() {
     setDisbaled(false);
   };
 
+  useEffect(() => {
+    shuffleCards();
+  }, []);
+
   return (
     <div className="App">
       <h1>Magic Memory</h1>
@@ -76,6 +82,7 @@ function App() {
           />
         ))}
       </div>
+      <p>Turns: {turns}</p>
     </div>
   );
 }

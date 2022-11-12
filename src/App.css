@@ -35,6 +35,11 @@ button:hover{
   display:block;
   border:2px solid white;
   border-radius: 6px;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .card .front {
